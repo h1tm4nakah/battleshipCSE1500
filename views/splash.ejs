@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShip</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/splash.css">
+</head>
+<body>
+    <div id = "bg-img"></div>
+    <div class = "statistics">
+        <h2>Average Time:<span id = "time"> <%= averageTime %></span> s</h2>
+        <h2>Finished games:<span id = "games"> <%= gamesCompleted %></span></h2>
+        <h2>Active games:<span id = "activeGames"> <%= gamesActive %></span></h2>
+        <h2>You visited the page:<span id="visits"></span></h2>
+    </div>
+    <div class = "middleSplit">
+            <div class = "logoContainer">
+                <img class = "logo" id = "logo" src = "images/logo.png"></img>
+            </div>
+            
+            
+            <a class="btn" id="play" href="/game">
+                <img src = "../images/bolt.png" id = "boltLeft1"></img>
+                <img src = "../images/bolt.png" id = "boltRight1"></img>
+            </a>
+            
+            <div class="btn" id="rules" onclick="rules()">
+                <img src = "../images/bolt.png" id = "boltLeft2"></img>
+                <img src = "../images/bolt.png" id = "boltRight2"></img>
+            </div>
+            <div class="credits">Press the logo</div>
+    </div>
+    
+</body>
+
+<script src = "../javascripts/rotateBolts.js"></script>
+<script src = "../javascripts/fullScreen.js"></script>
+<script type="text/javascript">
+    if( document.cookie.split(';').filter(item => { return item.indexOf('number-of-visits=') >= 0 }).length ) {
+        var item = document.cookie.split(';');
+        var visits = item[0].substring(17);
+        visits++;
+        document.cookie = 'number-of-visits='+visits+'; max-age=31536000';
+        var visitsText = document.getElementById("visits");
+        visitsText.innerHTML = visits;
+    } else {
+        document.cookie = 'number-of-visits=1; max-age=31536000';
+        var visitsText = document.getElementById("visits");
+        visitsText.innerHTML = "1";
+    }
+    function rules(){
+        alert("Cmon you should know battleship rules!!");
+    }
+</script>
+</html>

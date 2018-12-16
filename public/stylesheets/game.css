@@ -1,0 +1,146 @@
+.statusText {
+	color: #ececec;
+    letter-spacing: 6px;
+    text-shadow: 4px 0 0 #000, -4px 0 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 3px 3px #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000;
+    text-align: center
+}
+.shipStatsLayout{
+	column-count: 2;
+	column-gap: 900px;
+	padding: 40px;
+	height: 205px;
+}
+.player1ships{
+	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+	text-align: center;
+	
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 7px solid #2a2a31;
+    border-radius: 3px;
+}
+
+.player2ships{
+	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+	text-align: center;
+	
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 7px solid #2a2a31;
+    border-radius: 3px;
+}
+.gameStats{
+	background-image: url(../images/text.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	
+	height: 150px;
+    width: 400px;
+    position: absolute;
+    top: 60px;
+    right: 33%;
+
+	z-index: 2;
+}
+.statsImage {
+	width: 50%;
+	float: left;
+}
+.shipsContainer > * {
+    background-color: rgba(200,200,255,0.8); 
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.shipsContainer {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-gap: 0px;
+    float: left;
+    margin-left: 5%;
+    border: 10px solid #2a2a31;
+    border-radius: 10px;
+}
+.shootsContainer > * {
+    background-color: rgba(200,200,255,0.8); 
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.shootsContainer {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-gap: 0px;
+    float: right;
+    margin-right: 5%;
+    border: 10px solid #2a2a31;
+    border-radius: 10px;
+}
+.isBoatSmall0 {
+    background-image: url(../images/small_0.png);
+    background-size: cover;
+}
+.isBoatSmall1 {
+    background-image: url(../images/small_1.png);
+    background-size: cover;
+}
+.isBoatMid0 {
+    background-image: url(../images/mid_0.png);
+    background-size: cover;
+}
+.isBoatMid1 {
+    background-image: url(../images/mid_1.png);
+    background-size: cover;
+}
+.isBoatMid2 {
+    background-image: url(../images/mid_2.png);
+    background-size: cover;
+}
+.isBoatBig0 {
+    background-image: url(../images/big_0.png);
+    background-size: cover;
+}
+.isBoatBig1 {
+    background-image: url(../images/big_1.png);
+    background-size: cover;
+}
+.isBoatBig2 {
+    background-image: url(../images/big_2.png);
+    background-size: cover;
+}
+.isBoatBig3 {
+    background-image: url(../images/big_3.png);
+    background-size: cover;
+}
+.isBoatVertical {
+    transform: rotate(90deg);
+}
+.isBoatHit {
+    background-color: rgba(177, 11, 11, 0.8);
+    background-blend-mode: luminosity;
+}
+.isBoatMiss {
+    background-color: rgba(50,255,50,0.8);
+}
+.isHit {
+    background-color: rgba(255,50,50,0.8);
+}
+.isMiss {
+    background-color: rgba(50,50,50,0.8);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Battleship</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/game.css">
+    </head>
+    <body>
+        <h1 id="userText" class="statusText">Waiting for an opponent!</h1>
+        <div class="shipStatsLayout">
+            <div class = "player1ships">
+                <p>Your ships:</p>
+                <div><img class="statsImage" src="images/carrier.png"><h2 id="playerCarrier">X2</h2></div>
+                <div><img class="statsImage" src="images/sub.png"><h2 id="playerSubmarine">X2</h2></div>
+                <div><img class="statsImage" src="images/destroyer.png"><h2 id="playerDestroyer">X2</h2></div>
+            </div>
+            <div class = "player2ships">
+                <p>Enemy ships:</p>
+                <div><img class="statsImage" src="images/carrier.png"><h2 id="enemyCarrier">X2</h2></div>
+                <div><img class="statsImage" src="images/sub.png"><h2 id="enemySubmarine">X2</h2></div>
+                <div><img class="statsImage" src="images/destroyer.png"><h2 id="enemyDestroyer">X2</h2></div>
+            </div>
+        </div>
+        <div class ="shipStatsLayout gameStats">
+        </div>
+        <div id="shipsC" class="shipsContainer">
+            <div id="SHI0"></div><div id="SHI1"></div><div id="SHI2"></div><div id="SHI3"></div><div id="SHI4"></div>
+            <div id="SHI5"></div><div id="SHI6"></div><div id="SHI7"></div><div id="SHI8"></div><div id="SHI9"></div>
+            <div id="SHI10"></div><div id="SHI11"></div><div id="SHI12"></div><div id="SHI13"></div><div id="SHI14"></div>
+            <div id="SHI15"></div><div id="SHI16"></div><div id="SHI17"></div><div id="SHI18"></div><div id="SHI19"></div>
+            <div id="SHI20"></div><div id="SHI21"></div><div id="SHI22"></div><div id="SHI23"></div><div id="SHI24"></div>
+            <div id="SHI25"></div><div id="SHI26"></div><div id="SHI27"></div><div id="SHI28"></div><div id="SHI29"></div>
+            <div id="SHI30"></div><div id="SHI31"></div><div id="SHI32"></div><div id="SHI33"></div><div id="SHI34"></div>
+            <div id="SHI35"></div><div id="SHI36"></div><div id="SHI37"></div><div id="SHI38"></div><div id="SHI39"></div>
+            <div id="SHI40"></div><div id="SHI41"></div><div id="SHI42"></div><div id="SHI43"></div><div id="SHI44"></div>
+            <div id="SHI45"></div><div id="SHI46"></div><div id="SHI47"></div><div id="SHI48"></div><div id="SHI49"></div>
+            <div id="SHI50"></div><div id="SHI51"></div><div id="SHI52"></div><div id="SHI53"></div><div id="SHI54"></div>
+            <div id="SHI55"></div><div id="SHI56"></div><div id="SHI57"></div><div id="SHI58"></div><div id="SHI59"></div>
+            <div id="SHI60"></div><div id="SHI61"></div><div id="SHI62"></div><div id="SHI63"></div><div id="SHI64"></div>
+            <div id="SHI65"></div><div id="SHI66"></div><div id="SHI67"></div><div id="SHI68"></div><div id="SHI69"></div>
+            <div id="SHI70"></div><div id="SHI71"></div><div id="SHI72"></div><div id="SHI73"></div><div id="SHI74"></div>
+            <div id="SHI75"></div><div id="SHI76"></div><div id="SHI77"></div><div id="SHI78"></div><div id="SHI79"></div>
+            <div id="SHI80"></div><div id="SHI81"></div><div id="SHI82"></div><div id="SHI83"></div><div id="SHI84"></div>
+            <div id="SHI85"></div><div id="SHI86"></div><div id="SHI87"></div><div id="SHI88"></div><div id="SHI89"></div>
+            <div id="SHI90"></div><div id="SHI91"></div><div id="SHI92"></div><div id="SHI93"></div><div id="SHI94"></div>
+            <div id="SHI95"></div><div id="SHI96"></div><div id="SHI97"></div><div id="SHI98"></div><div id="SHI99"></div>
+
+
+        </div>
+        <div id="shootsC" class="shootsContainer">
+            <div id="SHO0"></div><div id="SHO1"></div><div id="SHO2"></div><div id="SHO3"></div><div id="SHO4"></div>
+            <div id="SHO5"></div><div id="SHO6"></div><div id="SHO7"></div><div id="SHO8"></div><div id="SHO9"></div>
+            <div id="SHO10"></div><div id="SHO11"></div><div id="SHO12"></div><div id="SHO13"></div><div id="SHO14"></div>
+            <div id="SHO15"></div><div id="SHO16"></div><div id="SHO17"></div><div id="SHO18"></div><div id="SHO19"></div>
+            <div id="SHO20"></div><div id="SHO21"></div><div id="SHO22"></div><div id="SHO23"></div><div id="SHO24"></div>
+            <div id="SHO25"></div><div id="SHO26"></div><div id="SHO27"></div><div id="SHO28"></div><div id="SHO29"></div>
+            <div id="SHO30"></div><div id="SHO31"></div><div id="SHO32"></div><div id="SHO33"></div><div id="SHO34"></div>
+            <div id="SHO35"></div><div id="SHO36"></div><div id="SHO37"></div><div id="SHO38"></div><div id="SHO39"></div>
+            <div id="SHO40"></div><div id="SHO41"></div><div id="SHO42"></div><div id="SHO43"></div><div id="SHO44"></div>
+            <div id="SHO45"></div><div id="SHO46"></div><div id="SHO47"></div><div id="SHO48"></div><div id="SHO49"></div>
+            <div id="SHO50"></div><div id="SHO51"></div><div id="SHO52"></div><div id="SHO53"></div><div id="SHO54"></div>
+            <div id="SHO55"></div><div id="SHO56"></div><div id="SHO57"></div><div id="SHO58"></div><div id="SHO59"></div>
+            <div id="SHO60"></div><div id="SHO61"></div><div id="SHO62"></div><div id="SHO63"></div><div id="SHO64"></div>
+            <div id="SHO65"></div><div id="SHO66"></div><div id="SHO67"></div><div id="SHO68"></div><div id="SHO69"></div>
+            <div id="SHO70"></div><div id="SHO71"></div><div id="SHO72"></div><div id="SHO73"></div><div id="SHO74"></div>
+            <div id="SHO75"></div><div id="SHO76"></div><div id="SHO77"></div><div id="SHO78"></div><div id="SHO79"></div>
+            <div id="SHO80"></div><div id="SHO81"></div><div id="SHO82"></div><div id="SHO83"></div><div id="SHO84"></div>
+            <div id="SHO85"></div><div id="SHO86"></div><div id="SHO87"></div><div id="SHO88"></div><div id="SHO89"></div>
+            <div id="SHO90"></div><div id="SHO91"></div><div id="SHO92"></div><div id="SHO93"></div><div id="SHO94"></div>
+            <div id="SHO95"></div><div id="SHO96"></div><div id="SHO97"></div><div id="SHO98"></div><div id="SHO99"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="javascripts/clientsideapp.js"></script>
+    </body>
+</html>
